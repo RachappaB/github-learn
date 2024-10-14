@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk to Someone - We're Here for You</title>
+    <style>
+        /* Global Styles */
+        body {
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 50px 30px;
+            box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            max-width: 500px;
+            width: 95%; /* Fill more space on small screens */
+            min-height: 80vh; /* Ensure it fills more of the page */
+        }
+
+        .profile {
+            margin-bottom: 25px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile h2 {
+            margin-top: 15px;
+            font-size: 30px;
+            color: #ff6b6b;
+            font-family: 'Georgia', serif;
+            letter-spacing: 1.2px;
+        }
+
+        h1 {
+            color: #4a69bd;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #333;
+            font-size: 20px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .contact {
+            margin-top: 35px;
+        }
+
+        .contact a {
+            display: block;
+            margin: 10px auto;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 18px;
+            max-width: 300px;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .contact a.call {
+            background: linear-gradient(45deg, #ff7675, #d63031);
+        }
+
+        .contact a.whatsapp {
+            background: linear-gradient(45deg, #25d366, #34af23);
+        }
+
+        .contact a.email {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+        }
+
+        .contact a:hover {
+            transform: scale(1.05);
+            opacity: 0.85;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+                min-height: 85vh;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .profile img {
+                width: 120px;
+                height: 120px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .contact a {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 15px;
+                min-height: 90vh;
+            }
+
+            .profile img {
+                width: 100px;
+                height: 100px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .contact a {
+                font-size: 14px;
+                padding: 12px;
+            }
+        }
+    </style>
+    <script>
+        function sendWhatsAppMessage() {
+            const message = "Hello, I need someone to talk to.";
+            const phoneNumber = "919008393471";
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, "_blank");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="https://avatars.githubusercontent.com/u/97609401?v=4" alt="Rachappa Biradar">
+            <h2>Rachappa Biradar</h2>
+        </div>
+        <h1>You Are Not Alone</h1>
+        <p>If you’re feeling down, remember it’s okay to talk to someone. I'm always here to listen.</p>
+        <p>Feel free to contact me anytime, 24/7 at <strong>+91 9008393471</strong>.</p>
+
+        <div class="contact">
+            <a href="tel:+919008393471" class="call">Call Me</a>
+            <a href="#" onclick="sendWhatsAppMessage()" class="whatsapp">WhatsApp Me</a>
+            <a href="mailto:rachappabiradar6@gmail.com" class="email">Email Me</a>
+        </div>
+    </div>
+</body>
+</html>
