@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Talk to Someone - We're Here for You</title>
+
+ <!-- Favicons for Different Platforms -->
+ <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+ <link rel="manifest" href="favicon_io/site.webmanifest">
+ <link rel="mask-icon" href="favicon_io/favicon.ico" color="#5bbad5">
+ <link rel="shortcut icon" href="favicon_io/favicon.ico">
+
+ <meta name="msapplication-TileColor" content="#2d89ef">
+ <meta name="msapplication-config" content="favicon_io/browserconfig.xml">
+ <meta name="theme-color" content="#ffffff">
+
+
     <style>
         /* Global Styles */
         body {
@@ -25,8 +38,8 @@
             box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
             border-radius: 20px;
             max-width: 500px;
-            width: 95%; /* Fill more space on small screens */
-            min-height: 80vh; /* Ensure it fills more of the page */
+            width: 95%;
+            min-height: 80vh;
         }
 
         .profile {
@@ -95,7 +108,6 @@
             opacity: 0.85;
         }
 
-        /* Media Queries for Responsiveness */
         @media (max-width: 768px) {
             .container {
                 padding: 40px 20px;
@@ -145,6 +157,7 @@
             }
         }
     </style>
+
     <script>
         function sendWhatsAppMessage() {
             const message = "Hello, I need someone to talk to.";
